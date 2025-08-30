@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tabelas</title>
+</head>
+
+<body>
+
+    <!--
+    Tags mais usadas nas tabelas:
+
+    <table> -> É o container que envolve a tabela do HTML
+    <tr>    -> É usado para iniciar e terminar cada linha da tabela
+    <th>    -> É usado para definir células de cabeçalho da tabela
+    <td>    -> É usado para definir celulas de dados da tabela
+    -->
+
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>28</td>
+            <td>Design</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>32</td>
+            <td>Desenvolvedor</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <!-- PRINCIPAIS ATRIBUTOS DA TABELA
+
+    border="1" -> Cria uma borda ao redor da tabela (É RECOMENDÁVEL UTILIZAR O CSS PARA ISSO)     
+     -->
+    <table border="2">
+        <tr>
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+        </tr>
+        <tr>
+            <td>Célula 1</td>
+            <td>Célula 2</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    cellpadding="" -> Este atributo defini o espaçamento dentro da tabela, entre os dados e as bordas.
+    -->
+    <table border="2" ; cellpadding="30">
+        <tr>
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+        </tr>
+        <td>Célula 1</td>
+        <td>Célula 2</td>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    cellspacing="30" -> Este atributo define a distancia do espaço entre as células da tabela
+    -->
+    <table border="3" cellspacing="30">
+        <tr>
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+        </tr>
+        <tr>
+            <td>Exemplo 1</td>
+            <td>Exemplo 2</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    width="300px" -> Este atributo defini a largura da borda entre pixel ou percentual
+    -->
+    <table border="4" width="500px">
+        <tr>
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+        </tr>
+        <tr>
+            <td>Exemplo 1</td>
+            <td>Exemplo 2</td>
+        </tr>
+    </table>
+    <br>
+    <table border="4" width="50%">
+        <tr>
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+        </tr>
+        <tr>
+            <td>Exemplo 1</td>
+            <td>Exemplo 2</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    height="100px" -> Este atributo defini a altura da borda e pode ser usado tanto em pixel como percentual
+    -->
+    <table border="2" height="200px">
+        <tr>
+            <td>Célula 1</td>
+            <td>Célula 2</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    align="center" -> Este atributo faz o alinhamento da tabela em relação ao seu container
+    -->
+    <table border="3" align="center">
+        <tr>
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+        </tr>
+        <tr>
+            <td>Exemplo 1</td>
+            <td>exemplo 2</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <!-- LINHAS DA TABELA -->
+
+    <!--
+    align="center/left/right" -> Este atributo faz o alinhamento horizontal do conteudo dentro da tabela
+    -->
+    <table border="4">
+        <tr align="center">
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+        </tr>
+        <tr align="right">
+            <td>Exemplo 1</td>
+            <td>Exemplo 2</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    valign=".." -> este atributo especifica o alinhamento vertical das celulas dentro de uma linha da tabela 
+    
+    OS VALORES SÃO:
+    
+    top: Alinha o conteúdo da célula ao topo da célula.
+    middle: Alinha o conteúdo da célula ao centro vertical da célula.
+    bottom: Alinha o conteúdo da célula à parte inferior da célula.
+    baseline: Alinha o conteúdo da célula em relação à linha de base dos textos dentro da mesma linha da tabela
+    -->
+    <table border="1" height="150" width="200">
+        <tr valign="middle">
+            <td>Linha 1, Célula 1</td>
+            <td>Linha 1, Célula 2</td>
+        </tr>
+        <tr valign="top">
+            <td>Linha 2, Célula 1</td>
+            <td>Linha 2, Célula 2</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    bgcolor=".." -> Este atributo é utilizado para definir a cor de fundo de uma determinada linha da tabela
+    -->
+    <table>
+        <tr bgcolor="#FF0000">
+            <td>Coluna 1</td>
+            <td>Coluna 2</td>
+        </tr>
+        <tr bgcolor="lightblue">
+            <td>Coluna 3</td>
+            <td>Coluna 4</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <!-- ATRIBUTOS DAS CELULAS DENTRO DA TABELA -->
+
+    <!--
+    colspan="2" -> Este atributo define o numero de colunas dentro de uma célula de forma horizontal
+    -->
+    <table border="3">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th colspan="2">Informações de contato</th>
+        </tr>
+        <tr>
+            <td>Luiz</td>
+            <td>33</td>
+            <td>E-mail: teste@teste.com</td>
+            <td>Telefone: 81988118822</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    rowspan="3" -> É utilizado dentro de uma célula para indicar quantas linhas deve ter verticalmente
+    -->
+    <table border="4">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Luiz</td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>34</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <!-- Melhorando a semântica e acessibilidade das tabelas -->
+
+    <!-- Usando <th> para cabeçalhos de colunas e linhas -->
+    <table border="2">
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+        </tr>
+        <tr>
+            <th scope="row">Luiz</th>
+            <td>33</td>
+        </tr>
+        <tr>
+            <th scope="row">Ana</th>
+            <td>20</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <!-- Usando <caption> para descrever a tabela -->
+    <table border="1">
+        <caption>Horário de Aulas</caption>
+        <tr>
+            <th>Dia</th>
+            <th>Matéria</th>
+            <th>Professor(a)</th>
+        </tr>
+        <tr>
+            <td>Segunda-feira</td>
+            <td>Matemática</td>
+            <td>Prof. Carlos</td>
+        </tr>
+        <tr>
+            <td>Terça-feira</td>
+            <td>Português</td>
+            <td>Profª. Maria</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <!-- 
+    Agrupando cabeçalhos e corpo da tabela com <thead>, <tbody> e <tfoot> 
+    
+    <thead> -> É usado para agrupar celulas de cabeçalhos dentro da tabela
+    <tbody> -> É usado para agrupar todos os dados da tabela
+    <tfoot> -> É usado para resumir ou concluir as informações apresentadas nas colunas do <tbody> e deve ser
+        colocada antes do <tbody> como boa pratica.
+    -->
+
+    <table border="1">
+        <caption>Horário Semanal de Aulas</caption>
+        <thead>
+            <tr>
+                <th>Dia da Semana</th>
+                <th>Matéria</th>
+                <th>Horário</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">Horários sujeitos a alterações</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Segunda-feira</td>
+                <td>Matemática</td>
+                <td>08:00 - 10:00</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+
+
+    <br>
+    <hr>
+    <br>
+
+
+</body>
+
+</html>

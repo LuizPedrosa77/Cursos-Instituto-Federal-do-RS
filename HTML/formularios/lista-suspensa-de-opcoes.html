@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com lista de opções suspensas</title>
+</head>
+
+<body>
+
+    <!--
+    LISTA DE OPÇÕES SUSPENSAS
+
+    id: Uma identificação única para o campo, que pode ser usada para referenciá-lo com CSS ou JavaScript.
+    name: O nome do campo, que é enviado com o formulário.
+    required: Indica que o usuário deve selecionar uma opção antes de enviar o formulário.
+    multiple: Quando presente, permite que o usuário selecione mais de uma opção simultaneamente.
+    size: Se combinado com multiple, define quantas opções são visíveis sem rolar.
+    -->
+    <form action="submit.php" method="post">
+        <label for="fruta">Escolha sua fruta favorita:</label>
+        <select name="fruta" id="fruta" required>
+            <option value="">Selecione uma opção</option>
+            <option value="maça">Maçã</option>
+            <option value="banana">Banana</option>
+            <option value="laranja">Laranja</option>
+            <option value="manga">Manga</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <form action="submit.php" method="post">
+        <label for="carros">Escolha um carro:</label>
+        <select name="carros" id="carros">
+            <optgroup label="Fabricantes Alemães">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+            </optgroup>
+            <optgroup label="Fabricantes Japoneses">
+                <option value="toyota">Toyota</option>
+                <option value="nissan">Nissan</option>
+                <option value="honda">Honda</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <br>
+    <hr>
+    <br>
+</body>
+
+</html>

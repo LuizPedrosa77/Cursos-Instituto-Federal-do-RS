@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com listas ordenadas</title>
+</head>
+
+<body>
+
+    <!--
+    LISTAS EM DOCUMENTOS
+
+    <ol> -> Listas não ordenadas
+    <ul> -> Listas ordenadas
+    <dl> -> Listas de descrição 
+    -->
+
+    <ol>
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+    </ol>
+
+    <!-- Atributo (start="..") adiciona numeros a lista -->
+    <ol start="5">
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+    </ol>
+
+    <!-- 
+    Atributo (type="..") adiciona adiciona o tipo de marcadores:
+ 
+    type="1": Usa números (1, 2, 3, ...) como marcadores. Este é o valor padrão se nenhum for especificado.
+    type="A": Usa letras maiúsculas (A, B, C, ...).
+    type="a": Usa letras minúsculas (a, b, c, ...).
+    type="I": Usa algarismos romanos maiúsculos (I, II, III, ...).
+    type="i": Usa algarismos romanos minúsculos (i, ii, iii, ...).
+    -->
+
+    <ol type="A">
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+    </ol>
+
+    <!-- Atributo (reversed="..") é usado para deixar a lista na ordem Decrescente -->
+
+    <ol reversed>
+        <li>Item 3</li>
+        <li></li>
+        <li></li>
+    </ol>
+
+</body>
+
+</html>

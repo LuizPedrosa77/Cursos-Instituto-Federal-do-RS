@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com formulários</title>
+</head>
+
+<body>
+
+    <!--
+    action="sumit.php" -> Especifica o URL do servidor ao qual os dados do formulário serão enviados para processamento
+    -->
+    <form action="sumit.php">
+
+    </form>
+
+    <!--
+    method=".." -> define como os dados do formulário devem ser enviados ao servidor via protocolo HTTP podendo
+    ser GET ou POST
+    -->
+
+    <!--
+    Método GET ->  Puxa informações/dados. Get vem de puxar/pegar/procurar
+    -->
+    <form action="submit.php" method="get">
+        <label for="query">Pesquisar:</label>
+        <input type="text" id="query" name="query">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    Método POST ->  Envia dados
+    -->
+    <form action="submit.php" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    Atributo enctype -> Especifica como os dados devem ser enviados  
+    
+    application/x-www-form-urlencoded -> Este é o valor padrão se o atributo não for especificado. Com esse método, os caracteres são codificados de forma que se ajustem aos padrões da URL, com espaços convertidos em + e caracteres especiais convertidos em valores ASCII HEX.
+    multipart/form-data  -> Este valor é necessário quando você está fazendo upload de arquivos através do formulário. 
+    text/plain           -> Com esse método, os dados são enviados sem nenhuma codificação. Isso é raramente utilizado e não é recomendado para a maioria das aplicações web, pois os dados podem ser enviados de uma forma que é difícil de interpretar pelo servidor web.
+    -->
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    Atributo autocomplete -> preenchimento automatico das informações
+
+
+    on: ativa o preenchimento automatico
+    off: Desativa o preenchimento automatico
+    -->
+    <form action="submit.php" method="post" autocomplete="on">
+        <label for="use-email">E-mail:</label>
+        <input type="email" id="use-email" name="email">
+
+        <label for="use-password">Senha:</label>
+        <input type="password" id="use-password" name="password">
+
+        <input type="submit" value="Entrar">
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    Atributo novalidate -> desativa a validação do lado do cliente
+    -->
+    <form action="submit.php" method="post" novalidate>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="age">Idade:</label>
+        <input type="number" id="age" name="age" min="18">
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr>
+    <br>
+</body>
+
+</html>

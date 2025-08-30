@@ -1,0 +1,25 @@
+/*
+Sintaxe básica da forma que é escrita pelo SELETOR e os pontos de DECLARAÇÃO;
+
+seletor {
+    propriedade: valor;
+    propriedade: valor;
+    propriedade: valor;
+}
+*/
+
+p {
+    color: blue;
+    font-size: 20px;
+}
+
+/*
+No exemplo acima o SELETOR é "p" e as DECLARAÇÕES são "color: blue; e font-size: 20px;. Sendo assim, todos os elementos <p> na página html receberão essa COR e FONTE.
+
+Aplicando o mesmo estilo a varios tipos.
+
+h1, h2, h3 {
+    color: red;
+    font-family: arial, sans-serif;
+}
+*/

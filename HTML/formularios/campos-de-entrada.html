@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com campos de entrada no formulario</title>
+</head>
+
+<body>
+
+    <form action="submit.php" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr>
+    <br>
+    <!--
+    TAGs DO <input>
+    
+    text -> Campo de texto padrão para entrada de texto simples.
+    password -> Campo de entrada que oculta o texto digitado, utilizado para senhas.
+    number -> Campo para entrada de números, com suporte para limites mínimo e máximo.
+    email -> Campo para inserção de e-mail, com validação de formato básica.
+    url -> Campo para inserção de URLs, com validação de formato básica.
+    radio -> Botões de opção que permitem ao usuário selecionar uma única opção de um conjunto.
+    checkbox -> Caixas que podem ser marcadas ou desmarcadas, permitindo múltiplas seleções.
+    submit -> Botão para enviar o formulário ao servidor.
+    reset -> Botão para limpar todos os campos do formulário.
+    file -> Campo para o usuário carregar um arquivo.
+    date, time, datetime-local -> Campos para seleção de data e/ou hora.
+    range -> Um controle deslizante para selecionar um valor dentro de um intervalo especificado.
+    color -> Um seletor de cor.
+    hidden -> Campo invisível ao usuário, utilizado para enviar informações que não precisam ser alteradas ou vistas.
+    -->
+
+    <!--
+    CAMPO DE ENTRADA DE TEXTO SIMPLES
+     
+    id: Uma identificação única para o campo, que pode ser usada para referenciá-lo com CSS ou JavaScript.
+    name: Define o nome do campo, que é enviado junto com o valor do campo no formulário para o servidor.
+    value: Especifica o valor inicial do campo, que pode ser alterado pelo usuário.
+    placeholder: Fornece um texto de orientação dentro do campo, que desaparece quando o usuário começa a digitar.
+    maxlength: Limita o número máximo de caracteres que o usuário pode inserir no campo.
+    readonly: Torna o campo somente leitura, impedindo que o usuário altere o valor, mas ainda permite que o valor seja enviado com o formulário.
+    disabled: Desabilita o campo, impedindo que o usuário interaja com ele e que seu valor seja enviado.
+    required: Indica que o campo deve ser preenchido antes que o formulário possa ser enviado.
+    size: Define a largura visual do campo em número de caracteres.
+    autocomplete: Controla se o navegador deve ou não preencher automaticamente o campo. Este atributo apresenta os seguintes valores:
+    autocomplete="on": Permite que o navegador preencha automaticamente o campo de senha com uma senha previamente salva pelo usuário. Útil para formulários de login.
+    autocomplete="off": Desativa a auto-completação do navegador para esse campo, forçando o usuário a digitar manualmente a senha. Pode ser útil em formulários de cadastro ou alteração de senha, onde a reutilização de senhas anteriores não é desejada.
+    autocomplete="new-password": Uma diretriz para o navegador que o campo é destinado à criação de uma nova senha. Isso pode incentivar o navegador a oferecer a geração de senha automática, se suportado.
+    -->
+
+    <form action="submit.php" method="post">
+        <label for="username">Nome de Usuário:</label>
+        <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário" required
+            maxlength="20" size="25">
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <!-- CAMPO DE ENTRADA DE SENHA -->
+    <form action="submit.php" method="post">
+        <label for="current-password">Senha Atual:</label>
+        <input type="password" id="current-password" name="current-password" autocomplete="current-password">
+
+        <label for="new-password">Nova Senha:</label>
+        <input type="password" id="new-password" name="new-password" autocomplete="new-password">
+
+        <input type="submit" value="Alterar Senha">
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <!-- CAMPO DE ENTRADA DE NUMEROS -->
+    <!--
+    min: Define o valor mínimo que os usuários podem inserir.
+    max: Define o valor máximo que os usuários podem inserir.
+    step: Define o intervalo entre os valores que o usuário pode selecionar, permitindo maior controle sobre os valores válidos
+    -->
+    <form action="submit.php" method="post">
+        <label for="age">Idade:</label>
+        <input type="number" id="age" name="age" min="0" max="130" step="1" required>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    CAMPO DE ENTRADA DE E-MAIL
+
+    multiple: Permite a inserção de múltiplos endereços de e-mail, separados por vírgulas. Esse atributo não é suportado em todos os navegadores.
+    pattern: Uma expressão regular que o valor do campo deve corresponder para ser considerado válido. Embora o tipo email já faça uma validação básica do formato de e-mail, o atributo pattern pode ser usado para regras mais específicas.
+    -->
+    <form action="submit.php" method="post">
+        <label for="user-email">Seu e-mail:</label>
+        <input type="email" id="user-email" name="email" placeholder="exemplo@dominio.com" required>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    BOTÕES DE OPÇÃO (RADIO BUTTONS)
+
+    id: Uma identificação única para o campo, que pode ser usada para referenciá-lo com CSS ou JavaScript.
+    name: Define o nome do grupo ao qual o botão de opção pertence. Todos os botões de opção que compõem um grupo devem ter o mesmo name.
+    value: O valor enviado ao servidor se essa opção for selecionada pelo usuário.
+    checked: Um atributo booleano que, se presente, indica que o botão de opção está selecionado por padrão quando a página é carregada.
+    disabled: Um atributo booleano que, se presente, desabilita o botão de opção, impedindo que o usuário o selecione.
+    -->
+    <form action="submit.php" method="post">
+        <p>Escolha sua bebida favorita:</p>
+
+        <input type="radio" id="cafe" name="bebida" value="Café">
+        <label for="cafe">Café</label><br>
+
+        <input type="radio" id="cha" name="bebida" value="Chá" checked>
+        <label for="cha">Chá</label><br>
+
+        <input type="radio" id="agua" name="bebida" value="Água">
+        <label for="agua">Água</label><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    CAIXA DE SELEÇÃO(checkbox)
+    
+    id: Uma identificação única para o campo, que pode ser usada para referenciá-lo com CSS ou JavaScript.
+    name: Define o nome do campo que será enviado com o formulário.
+    value: O valor enviado ao servidor se a caixa de seleção for marcada.
+    checked: Um atributo booleano que, se presente, marca a caixa de seleção como selecionada por padrão quando a página é carregada.
+    disabled: Um atributo booleano que, se presente, desabilita a caixa de seleção, impedindo interações do usuário.
+    -->
+    <form action="submit.php" method="post">
+        <label for="subscribe">Inscreva-se para receber nossos newsletters:</label>
+        <input type="checkbox" id="subscribe" name="newsletter" value="yes" checked><br>
+
+        <label for="agree">Eu concordo com os termos e condições:</label>
+        <input type="checkbox" id="agree" name="terms" value="agree"><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    BOTÕES PARA SUBMETER UM FORMULÁRIO
+
+    id: Uma identificação única para o campo, que pode ser usada para referenciá-lo com CSS ou JavaScript.
+    name: Embora menos comum para botões de envio, este atributo pode ser usado para identificar o botão no lado do servidor quando o formulário é submetido.
+    type: Este atributo deve ser definido como submit para indicar que o elemento é um botão de envio de formulário.
+    value: Define o texto que será exibido no botão de envio. Esse texto é visível para o usuário e pode ser personalizado para se adequar ao contexto do formulário.
+    -->
+    <form action="submit.php" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <input type="submit" value="Enviar Dados">
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    BOTÕES PARA REDEFINIR OS VALORES DOS CAMPOS DO FORMULÁRIO
+
+     <input type="reset"> cria um botão que permite ao usuário redefinir todos os campos de um formulário aos seus valores iniciais.
+    -->
+    <form action="submit.php" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Redefinir">
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    CAMPO DE SELEÇÃO DE ARQUIVO
+
+    <input type="file">
+
+    id: Uma identificação única para o campo, que pode ser usada para referenciá-lo com CSS ou JavaScript.
+    name: O nome do campo, que será enviado com o formulário.
+    accept: Permite especificar um ou mais tipos de arquivos que o usuário pode selecionar, usando tipos MIME (como image/* para imagens ou .pdf para documentos PDF). Isso ajuda a filtrar os arquivos no diálogo de seleção, facilitando para o usuário encontrar o tipo de arquivo desejado.
+    multiple: Quando presente, permite que os usuários selecionem mais de um arquivo simultaneamente.
+    required: Indica que o usuário deve selecionar um arquivo antes de enviar o formulário.
+    -->
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+        <label for="user-file">Escolha um arquivo:</label>
+        <input type="file" id="user-file" name="file" accept="image/*" multiple>
+        <br>
+        <input type="submit" value="Upload">
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <!--
+    CAMPOS DE ENTRADA DE DATA E HORA
+    
+    <input type="date">: Permite ao usuário selecionar uma data (ano, mês e dia). Os navegadores geralmente apresentam isso como um calendário pop-up do qual uma data pode ser selecionada.
+    <input type="time">: Permite ao usuário selecionar um horário (horas e minutos, opcionalmente segundos e fração de segundo). A apresentação exata pode variar, mas geralmente inclui algum tipo de interface gráfica para a seleção de horário.
+    <input type="datetime-local">: Combina as funcionalidades dos tipos date e time, permitindo ao usuário selecionar uma data e um horário (sem considerar fuso horário). Este tipo é particularmente útil para agendamentos ou entradas de eventos que acontecem em uma data e hora específicas.
+    -->
+    <form action="submit.php" method="post">
+        <label for="meeting-date">Data da Reunião:</label>
+        <input type="date" id="meeting-date" name="meeting-date"><br>
+
+        <label for="meeting-time">Horário da Reunião:</label>
+        <input type="time" id="meeting-time" name="meeting-time"><br>
+
+        <label for="event-datetime">Data e Horário do Evento:</label>
+        <input type="datetime-local" id="event-datetime" name="event-datetime"><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr>
+    <br>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+/*
+Seletores de atributo
+Os seletores de atributo são uma ferramenta poderosa que permite estilizar elementos HTML com base nos atributos e seus valores. 
+*/
+
+/* [attr] -> atributo -> seleciona o atributo especificado*/
+[data-info] {
+    background-color: yellow;
+}
+
+/* [attr=value] -> atributo com valor -> seleciona o atributo com o valor exatamente igual específicado */
+input [type="text"] {
+    border: 3px solid gray;
+}
+
+/* [attr~=value] -> atributo com valor -> seleciona o atributo com o valor de lista de palavras específico. */
+div[class~="exemple"] {
+    color: red;
+}
+
+/* [attr^=value] -> atributo com valor -> Seleciona todos os elementos cujo valor começa com a string específica. */
+a[href^="http"] {
+    color: green;
+}
+
+/* [attr$=value] -> atributo com valor -> seleciona todos os elementos cujo valor termina com a string específica */
+img[src$=".jpg"] {
+    border: 3px solid black;
+}
+
+/* EXEMPLO PRÁTICO 1 */
+
+[data-info] {
+    background-color: yellow;
+}
+
+input[type="text"] {
+    border: 3px solid gray;
+}
+
+div[class~="exemple"] {
+    color: red;
+}
+
+a[href^="https"] {
+    color: green;
+}
+
+img[src$=".png"] {
+    border: 3px solid black;
+}
+
+/*FINAL DO EXEMPLO*/
+
+/*
+SELETORES DE PSEUDO-CLASSES
+
+Os seletores de pseudo-classes são utilizados para definir estilos especiais para estados 
+específicos de elementos em uma página da web. Eles permitem que você aplique estilos a um 
+elemento não apenas com base em sua informação no documento, mas também com base em seu estado,
+como hover, focus, entre outros. 
+*/
+
+/* :hover -> Aplica estilo quando o usuário passa o mouse sobre o elemento */
+a:hover {
+    color: red;
+}
+
+/* :focus -> Utiliza elemento quando ele está focado, como um campo de entrada de texto. */
+input:focus {
+    border: 2px solid blue;
+}
+
+/* :active -> Aplica estilo quando elemento está sendo ativado pelo usuario, geralmente com clique */
+button:active {
+    position: relative;
+    top: 2px;
+}
+
+/* :first-child e :last-child - Selecionam o primeiro e o último filho de seu elemento pai, respectivamente.*/
+li:first-child {
+    font-weight: bold;
+}
+
+/* :nth-child(n) -> Permite estilizar um elemento que é o enésimo filho de seu elemento Pai. */
+li:nth-child(2) {
+    color: green;
+}
+
+/* EXEMPLO PRATICO 2 */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+li:hover {
+    background-color: lightblue;
+    /* Muda a cor de fundo ao passar o mouse */
+}
+
+li:nth-child(old) {
+    color: red;
+    /* Cor vermelha para itens ímpares */
+}
+
+li:last-child {
+    font-weight: bold;
+    /* Negrito para o último item */
+}
+
+/*
+:hover: Aplica um fundo azul claro aos itens da lista quando o usuário passa o mouse sobre eles.
+:nth-child(odd): Seleciona todos os itens ímpares da lista (1, 3, etc.) e os colore de vermelho.
+:last-child: Aplica um estilo de fonte em negrito ao último item da lista.
+*/
+
+/*FINAL DO EXEMPLO 2*/
+
+/*SELETORES DE PSEUDO-ELEMENTOS*/
+/*::before - Insere conteúdo antes do conteúdo de um elemento. É frequentemente utilizado para adicionar elementos decorativos ou conteúdo que não precisa estar no HTML. Veja um exemplo no quadro abaixo:*/
+
+p::before {
+    content: "Nota: ";
+    font-weight: bold;
+}
+
+/*::after - Insere conteúdo depois do conteúdo de um elemento. Veja um exemplo no quadro abaixo:*/
+
+p::after {
+    content: ";";
+    color: red;
+}
+
+/*::first-letter - Permite estilizar a primeira letra de um bloco de texto. Veja um exemplo no quadro abaixo:*/
+
+p::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+/*::first-line - Estiliza a primeira linha do texto de um elemento. Isso pode ser útil para definir estilos de linhas de abertura. Veja um exemplo no quadro abaixo:*/
+
+p::first-line {
+    font-variant: small-caps;
+}
+
+/*EXEMPLO PRÁTICO 3*/
+p::before {
+    content: "Nota: ";
+    color: red;
+    font-weight: bold;
+}
+
+p::after {
+    content: " (leia com atenção)";
+    color: blue;
+    font-style: italic;
+}
+
+p::first-letter {
+    font-size: 200%;
+    color: green;
+}
+
+/*
+::before: Este pseudo-elemento adiciona "Nota: " antes do conteúdo do parágrafo. Ele é estilizado para ser vermelho e em negrito, chamando atenção para o texto como uma nota prévia.
+::after: Adiciona " (leia com atenção)" após o conteúdo do parágrafo. O texto é azul e em itálico, fornecendo uma nota secundária de maneira mais sutil.
+::first-letter: Estiliza a primeira letra do parágrafo, tornando-a 200% maior do que o texto padrão e colorindo-a de verde para um destaque visual.
+*/
+
+/* FINAL DO EXEMPLO PRÁTICO 3 */
+
+/*
+Palavra-chave !important
+
+No CSS, a palavra-chave !important é uma forma de aumentar a prioridade de uma regra de estilo, 
+tornando-a mais prioritária do que outras regras que se aplicam ao mesmo elemento. Isso pode ser 
+útil em situações onde você precisa garantir que uma declaração específica seja aplicada, 
+independentemente de outras regras definidas em outros lugares.
+*/
+.texto-padrao {
+    color: blue;
+    /* Cor padrão para todos os parágrafos com classe "texto-padrao" */
+}
+
+.texto-padrao {
+    color: red !important;
+    /* Esta cor tem prioridade sobre a azul, mesmo sendo definida depois */
+}
+
+.texto-padrao {
+    color: yellow;
+    /* Outra cor padrão para todos os parágrafos com classe "texto-padrao" */
+}

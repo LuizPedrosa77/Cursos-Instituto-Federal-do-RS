@@ -1,0 +1,61 @@
+/*
+Seletor universal -> em CSS é representado pelo símbolo asterisco (*). 
+Ele tem a capacidade de selecionar todos os elementos de uma página HTML, 
+o que o torna uma ferramenta poderosa para aplicar estilos de maneira global ou 
+para redefinir certos padrões de estilo.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Aplica a mesma família de fontes a todos os elementos do documento HTML*/
+}
+
+
+/*
+Um seletor de ID seleciona um elemento com base no seu atributo id. 
+Cada ID deve ser único dentro de uma página HTML, o que significa que cada seletor de ID 
+apontará para no máximo um elemento dentro de qualquer documento.
+
+A sintaxe para um seletor de ID é um símbolo de cerquilha (#) seguido pelo valor do ID do elemento.
+Por exemplo, #header seleciona o elemento que tem id="header". 
+*/
+#main-header {
+    background-color: #333;
+    color: beige;
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    color: brown;
+}
+
+/* div -> divisões */
+div {
+    background-color: lightgray;
+    padding: center;
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.botao1 {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.botao2 {
+    background-color: brown;
+    color: azure;
+    cursor: pointer;
+}
