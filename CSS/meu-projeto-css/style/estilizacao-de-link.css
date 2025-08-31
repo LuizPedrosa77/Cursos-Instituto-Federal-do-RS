@@ -1,0 +1,83 @@
+/* CORES E DECORAÇÃO DE TEXTO 
+
+O estilo visual básico de um link inclui sua cor e a decoração de texto (geralmente sublinhado). 
+Você pode definir estilos diferentes para os estados do link: normal, hover (quando o mouse está sobre o link), 
+active (no momento do clique) e visited (após o link ter sido visitado). 
+*/
+
+
+/*
+Fundo e Preenchimento
+
+Adicionar um fundo (background) e preenchimento (padding) pode fazer o link se destacar mais, 
+especialmente quando se trata de links dentro de um menu de navegação ou botões. Vejamos um exemplo, 
+conforme quadro abaixo, que mostra como aplicar essas propriedades para melhorar o design de links na sua página web.
+*/
+
+
+/*
+Transições e animações
+Transições e animações podem elevar a interatividade de um site, melhorando a experiência do usuário ao tornar as mudanças visuais mais suaves e agradáveis.  
+
+As transições permitem que você altere os valores das propriedades de forma gradual ao longo de um determinado período de tempo. 
+Por exemplo, você pode suavizar a mudança de cor de um link quando o usuário passa o mouse sobre ele. A propriedade transition é usada para isso, 
+especificando a propriedade CSS a ser alterada, a duração da transição e o tipo de temporização.
+
+As animações, por outro lado, são mais complexas e permitem maior controle sobre a sequência de estilos que um elemento passa. 
+Usando @keyframes, você define os estilos em diferentes pontos durante a animação. Você pode controlar a duração, o delay, 
+o número de vezes que a animação se repete, entre outros parâmetros com a propriedade animation.
+*/
+
+
+/*
+Tipos de listas
+Você pode alterar o estilo dos marcadores em listas não ordenadas usando a propriedade list-style-type. 
+Logo, para listas não ordenadas (<ul>), os valores comuns incluem:
+
+
+disc: O valor padrão, mostra um círculo sólido como marcador.
+circle: Mostra um círculo vazio.
+square: Mostra um quadrado sólido.
+none: Remove os marcadores, deixando apenas o texto da lista.
+Para listas ordenadas (<ol>), a propriedade list-style-type altera os tipos de numeração, cujos valores incluem:
+
+
+decimal: O padrão para listas ordenadas mostra números (1, 2, 3, etc.).
+decimal-leading-zero: Mostra números com um zero à frente (01, 02, 03, etc.), útil para listas com mais de dez itens para manter o alinhamento.
+lower-roman: Mostra números em algarismos romanos em minúsculas (i, ii, iii, etc.).
+upper-roman: Mostra números em algarismos romanos em maiúsculas (I, II, III, etc.).
+lower-alpha: Mostra letras em minúsculas (a, b, c, etc.).
+upper-alpha: Mostra letras em maiúsculas (A, B, C, etc.).
+*/
+
+
+/*
+Imagens como marcadores
+A propriedade list-style-image é utilizada para definir uma imagem como marcador de itens em listas ordenadas (<ol>) e não ordenadas (<ul>). 
+Essa propriedade oferece uma forma de personalizar ainda mais o design das listas, substituindo os tradicionais marcadores disc, circle, square, entre outros, por uma imagem específica, o que pode contribuir para o estilo visual de um site ou aplicação web.
+*/
+exemplo {
+    list-style-image: url('caminho_da_imagem');
+}
+
+
+/*
+Espaçamento, preenchimento e alinhamento
+
+Estilizar listas em CSS utilizando margens (margin), preenchimentos (padding) e alinhamento de texto (text-align) 
+é essencial para criar uma apresentação visual clara e atraente de listas ordenadas e não ordenadas. 
+Essas propriedades ajudam a controlar o espaço em torno e dentro dos itens da lista, bem como a maneira como o texto é alinhado dentro dos itens, onde:
+
+
+A propriedade margin é usada para criar espaço ao redor dos elementos, fora das bordas definidas. 
+No contexto de listas, você pode usar margens para separar a lista de outros conteúdos ou para separar os itens individuais dentro da lista.
+O padding é o espaço entre o conteúdo do elemento e sua borda. No caso de listas, 
+ajustar o preenchimento pode ajudar a posicionar melhor o texto dentro dos itens da lista ou alterar a posição dos marcadores em relação ao texto.
+A propriedade text-align controla o alinhamento horizontal do texto dentro de um elemento. 
+Embora geralmente usado em parágrafos e cabeçalhos, também é útil para alinhar o texto dentro dos itens da lista.
+
+Margin: Define um espaço de 20px ao redor da lista completa, separando-a de outros conteúdos na página.
+Padding: Aplica um preenchimento de 10px em todos os lados dentro de cada item da lista, o que aumenta a legibilidade ao afastar o texto das bordas.
+Text-align: Centraliza o texto dentro de cada item da lista, oferecendo uma apresentação mais harmoniosa, 
+especialmente útil em design de interfaces centradas ou minimalistas.
+*/

@@ -1,0 +1,23 @@
+/*
+Estilização de formulários
+Estilizar formulários com CSS é uma parte fundamental do design de interfaces de usuário, pois melhora a usabilidade e a estética do site. 
+Formulários são componentes interativos usados para capturar informações do usuário, e uma boa estilização pode fazer uma grande 
+diferença na experiência do usuário. 
+
+Um formulário típico inclui elementos como:ss
+
+
+Campos de Entrada (<input>): Usados para capturar dados do usuário. Incluem tipos como texto, senha, número, etc.
+Áreas de Texto (<textarea>): Usadas para entrada de texto de várias linhas.
+Botões (<button>, <input[type="submit"]>): Usados para enviar os dados do formulário.
+Labels (<label>): Texto descritivo associado a cada campo de entrada.
+
+
+Observe que:
+
+O formulário tem uma largura máxima de 500px e é centralizado com margin: 0 auto. Tem um fundo cinza claro (#f3f3f3) e bordas arredondadas.
+Os labels são exibidos como blocos para garantir que cada label apareça acima de seu respectivo campo de entrada. A margem superior separa visualmente cada campo.
+Os campos de entrada de dados estendem-se ao longo da largura completa do formulário com width: 100%. 
+Eles têm uma borda sólida e arredondada para melhorar a estética e o padding interno para melhor legibilidade.
+O botão foi estilizado para ocupar a largura total do formulário, com uma cor de fundo verde que muda para um verde mais escuro no hover, melhorando a interatividade.
+*/
