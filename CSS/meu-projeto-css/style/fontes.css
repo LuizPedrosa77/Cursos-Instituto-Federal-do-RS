@@ -88,4 +88,24 @@ Valores Numéricos:
 800, 900: Pesos de fonte muito grossos, mais do que bold.
 Valores Relativos:
 bolder e lighter: Estes valores ajustam o peso da fonte para ser mais pesado ou mais leve, respectivamente, em relação ao peso herdado do elemento pai.
+
+
+*/
+
+/* ESTILO DE FONTES */
+
+/*
+A propriedade font-style é utilizada para definir o estilo da fonte de um texto.
+
+
+normal: Este é o valor padrão, indicando que o texto deve ser exibido em estilo normal, sem itálico ou oblíquo.
+
+italic: Aplica um estilo itálico ao texto. Este estilo é geralmente usado para enfatizar uma palavra ou frase dentro de um contexto maior de texto.
+
+oblique: Também inclina o texto, mas não necessariamente no mesmo estilo que a fonte itálica específica projetada pelo tipógrafo. 
+Em muitos casos, se uma fonte itálica não está disponível, um navegador pode simular o estilo itálico inclinando a fonte normal. Isso é o que oblique faz.
+
+oblique <angle>: Você pode especificar um ângulo para o texto oblíquo. Por exemplo, oblique 15deg inclina o texto em um ângulo de 15 graus. 
+Esta capacidade oferece mais controle sobre o grau de inclinação do texto.
+
 */
