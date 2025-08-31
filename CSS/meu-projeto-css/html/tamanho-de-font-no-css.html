@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com TAMANHO DE FONTES no css: EM</title>
+
+    <style>
+        .container {
+            font-size: 20px;
+            /*TAMANHO DA FONTE*/
+        }
+
+        h1 {
+            font-size: 2em;
+            /* 32px, pois 2 * 16px = 32px */
+        }
+
+        p {
+            font-size: 1em;
+            /* 16px, o mesmo que o elemento pai */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Título Principal</h1>
+        <p>Este é um exemplo de texto usando a unidade em. O tamanho da fonte e a margem são definidos em relação ao
+            tamanho da fonte do elemento.</p>
+        <p>O segundo parágrafo aqui seguirá as mesmas regras do anterior, demonstrando consistência na aplicação de
+            `em`.</p>
+    </div>
+
+</body>
+
+</html>
