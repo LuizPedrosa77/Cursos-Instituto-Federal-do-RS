@@ -71,3 +71,21 @@ h1 {
     font-size: 5vw;
     /* O tamanho da fonte é 5% da largura da viewport */
 }
+
+/* PESO DA FONTE */
+
+/*
+A propriedade font-weight é usada para definir a espessura, ou o peso, do texto de um elemento. 
+Isso afeta o quão grosso ou fino os caracteres aparecem em uma tela ou impressão.
+
+Palavras-chave Normais: 
+normal: O peso normal do texto, geralmente equivalente a 400.
+bold: Texto em negrito, geralmente equivalente a 700.
+
+Valores Numéricos:
+100, 200, 300: Pesos de fonte mais finos.
+500, 600: Pesos de fonte um pouco mais grossos que o normal.
+800, 900: Pesos de fonte muito grossos, mais do que bold.
+Valores Relativos:
+bolder e lighter: Estes valores ajustam o peso da fonte para ser mais pesado ou mais leve, respectivamente, em relação ao peso herdado do elemento pai.
+*/
