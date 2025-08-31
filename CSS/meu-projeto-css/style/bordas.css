@@ -1,0 +1,19 @@
+/*
+BORDAS
+
+
+A propriedade border é usada para definir a borda de um elemento HTML. Ela permite especificar a largura, estilo e cor da borda em uma única declaração, 
+tornando-a uma ferramenta versátil para o design de páginas web. 
+*/
+exemplo {
+    border: border-width border-style border-color;
+}
+
+/*
+border-width: Define a espessura da borda. Pode ser especificada em pixels (px), pontos (pt), ems (em), ou qualquer outra unidade de medida CSS.
+border-style: Define o estilo da borda. Alguns estilos comuns incluem solid, dotted, dashed, double, groove, ridge, inset, e outset.
+border-color: Define a cor da borda. Pode ser qualquer valor de cor válido em CSS, como nomes de cores, valores hexadecimais, RGB, RGBA, etc.
+*/
+div {
+    border: 1px solid black;
+}
