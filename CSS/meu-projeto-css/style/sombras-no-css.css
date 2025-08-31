@@ -1,0 +1,65 @@
+/*
+Sombras
+
+As propriedades box-shadow e text-shadow são utilizadas para adicionar sombras a elementos e textos, respectivamente. 
+Elas podem ser usadas para criar profundidade, destacar elementos interativos ou simplesmente para efeitos estéticos.
+*/
+
+
+/*
+Propriedade box-shadow
+
+A propriedade box-shadow é usada para adicionar sombras em volta de um elemento HTML, criando a impressão de que o elemento está elevado acima do resto do conteúdo. 
+
+A sintaxe da box-shadow é a seguinte, conforme quadro abaixo:
+*/
+exemplo {
+    box-shadow: offsetX offsetY blurRadius spreadRadius color inset;
+}
+
+/*
+offsetX: Deslocamento horizontal da sombra em relação ao elemento. Valores positivos deslocam a sombra para a direita, 
+enquanto valores negativos a deslocam para a esquerda.
+
+offsetY: Deslocamento vertical da sombra. Valores positivos deslocam a sombra para baixo, enquanto valores negativos a deslocam para cima.
+
+blurRadius: Um valor opcional que determina o quão "borrada" é a sombra, sendo 0 um contorno nítido.
+
+spreadRadius: Um valor opcional que aumenta ou diminui o tamanho da sombra.
+
+color: Cor da sombra.
+
+inset: Se especificado, torna a sombra interna ao elemento.
+*/
+
+
+
+/*
+Propriedade text-shadow
+
+
+A propriedade text-shadow é usada para adicionar sombras ao texto, o que pode ajudar a melhorar a legibilidade ou adicionar um estilo visual atraente ao design de uma página. 
+
+A sintaxe básica de text-shadow está demonstrada no quadro abaixo:
+*/
+exemplo {
+    text-shadow: offsetX offsetY blurRadius color;
+}
+
+/*
+offsetX: Deslocamento horizontal da sombra em relação ao texto. Valores positivos deslocam a sombra para a direita, e valores negativos para a esquerda.
+offsetY: Deslocamento vertical da sombra. Valores positivos deslocam a sombra para baixo, e valores negativos para cima.
+blurRadius: Um valor opcional que define o quanto a sombra é suavizada ou borrada. Um valor de 0px resulta em uma sombra nítida e definida.
+color: A cor da sombra. Pode ser especificada em formatos como nome de cor, hexadecimal, RGB, RGBA, etc.
+Essa propriedade pode aceitar múltiplos valores para criar sombras múltiplas ou mais complexas, tal como ilustrado no quadro abaixo:
+*/
+exemplo {
+    text-shadow: 1px 1px 2px black, 3px 3px 5px blue;
+}
+
+/*
+Para o elemento h1, o código text-shadow: 2px 2px 4px rgba(243, 224, 53, 0.5);  aplica uma sombra preta com transparência de 50%, 
+deslocada 2 pixels para a direita e 2 pixels para baixo, com um desfoque de 4 pixels. 
+Para o elemento p, o código text-shadow: 1px 1px 2px red, 3px 3px 2px blue; aplica duas sombras: uma vermelha que se desloca 1 pixel para a direita 
+e para baixo, e uma azul que se desloca 3 pixel para a esquerda e para cima, ambas com um desfoque de 2 pixels. 
+*/

@@ -1,0 +1,39 @@
+/*
+Gradientes
+
+Gradientes são transições suaves entre duas ou mais cores. Eles podem ser usados em vários tipos de propriedades, como background ou border-image. 
+O CSS suporta dois tipos principais de gradientes: lineares e radiais.
+*/
+
+
+/*
+Gradiente linear
+Um gradiente linear cria uma progressão de cores ao longo de uma linha reta, e é definido usando a função linear-gradient(). 
+A direção do gradiente pode ser especificada como um ângulo ou direção relativa (como 'to left' ou 'to bottom'). 
+*/
+exemplo {
+    background: linear-gradient(direction, color-stop1, color-stop2, );
+}
+
+/*
+direction: A direção pode ser um ângulo (como 45deg) ou uma direção (como to bottom).
+color-stop: Cada "parada de cor” especifica uma cor que vamos incluir no gradiente.
+*/
+
+
+
+/*
+Gradiente radial
+
+Um gradiente radial é definido com a função radial-gradient(), onde as cores emanam de um ponto central e se espalham para fora em círculos concêntricos. 
+A forma padrão é um círculo, mas pode ser ajustada para ser uma elipse também. 
+*/
+exemplo {
+    background: radial-gradient(shape size at position, start-color, last-color);
+}
+
+/*
+shape e size: Definem a forma do gradiente (círculo ou elipse) e o tamanho (como closest-side, farthest-corner, etc.).
+position: O ponto central do gradiente, como at center ou at top left.
+start-color, last-color: Cores usadas no gradiente.
+*/
