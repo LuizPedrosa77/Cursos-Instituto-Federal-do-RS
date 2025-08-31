@@ -129,3 +129,119 @@ Isso cria um bloco visual uniforme de texto, semelhante ao que é visto em colun
 
 start e end: Alinha o texto ao início ou ao fim da linha base, respectivamente. 
 */
+
+/* ESPAÇO ENTRE LINHAS */
+
+/*
+line-height é crucial para controlar o espaçamento vertical entre linhas de texto, impactando diretamente a legibilidade e a estética de um documento web.
+
+
+Número unitário: O mais comum e recomendado, pois é relativo ao tamanho da fonte atual do elemento. Por exemplo, line-height: 1.5; 
+significa que a altura da linha é 1,5 vezes o tamanho da fonte do elemento.
+Valor com unidades (como px, em, rem): Especifica a altura da linha com uma unidade fixa ou relativa. Por exemplo, line-height: 20px; 
+define a altura da linha para 20 pixels.
+
+Porcentagem: Relativa ao tamanho da fonte atual do elemento. Por exemplo, line-height: 150%; também resulta em uma altura de linha que é 
+1,5 vezes o tamanho da fonte.
+*/
+
+/*DECORAÇÃO DE TEXTO*/
+
+/*
+A propriedade text-decoration é usada principalmente para adicionar decoração ao texto de um elemento.
+*/
+p {
+    text-decoration: underline red wavy;
+}
+
+
+/* Transformação de texto */
+
+/*
+A propriedade text-transform é usada para alterar a capitalização do texto de um elemento HTML. Ela permite controlar se o texto aparece em letras maiúsculas, minúsculas ou com a primeira letra de cada palavra em maiúscula, entre outras opções. 
+
+
+none: Não aplica nenhuma transformação ao texto. Este é o valor padrão, onde o texto é exibido como está no HTML.
+capitalize: Transforma a primeira letra de cada palavra em maiúscula.
+uppercase: Transforma todas as letras do texto em maiúsculas.
+lowercase: Transforma todas as letras do texto em minúsculas.
+*/
+
+
+/* CORES */
+
+/*
+Estilizar cores no CSS é uma parte essencial do design de uma página web, 
+pois as cores influenciam não apenas a estética, mas também a usabilidade e a experiência do usuário. 
+
+
+Nomes de Cores: CSS suporta nomes de cores como red, green, blue, etc.
+Hexadecimais: Representa cores usando valores hexadecimais, como #ff0000 para vermelho.
+RGB: Utiliza o modelo RGB (Red, Green, Blue), como em rgb(255, 0, 0) para vermelho.
+RGBA: Similar ao RGB, mas adiciona um canal alfa para transparência, por exemplo, rgba(255, 0, 0, 0.5) para vermelho com 50% de transparência.
+HSL: Baseia-se em matiz (Hue), saturação (Saturation) e luminosidade (Lightness), como em hsl(0, 100%, 50%) para vermelho.
+HSLA: Adiciona um canal alfa à formatação HSL, como em hsla(0, 100%, 50%, 0.5).
+*/
+
+
+/* FUNDOS */
+
+/*
+A propriedade background é uma das mais poderosas ferramentas de estilização disponíveis para designers e desenvolvedores, 
+permitindo uma ampla gama de efeitos visuais. 
+*/
+
+/*
+background-color: Define a cor de fundo do elemento. Pode ser um nome de cor, valor hexadecimal, RGB, RGBA, HSL ou HSLA. Veja um exemplo no quadro abaixo:
+
+background-color: #f8f8f8;
+
+---------
+
+background-image: Especifica uma ou mais imagens para usar como fundo. As imagens são colocadas na ordem especificada, e a primeira imagem é colocada na frente. 
+Veja um exemplo no quadro abaixo:
+
+background-image: url('image.jpg');
+
+---------
+
+background-repeat: Define como uma imagem de fundo deve ser repetida. Valores comuns incluem repeat, repeat-x, repeat-y, e no-repeat. Veja um exemplo no quadro abaixo:
+
+background-repeat: repeat-x; ->  Repete horizontalmente 
+
+---------
+
+background-position: Especifica a posição inicial da imagem de fundo. Pode ser definida em valores como top, bottom, left, right, centímetros, porcentagens, etc. 
+Veja um exemplo no quadro abaixo:
+
+background-position: top right;
+
+---------
+
+background-size: Controla o tamanho da imagem de fundo; os valores podem ser cover (a imagem de fundo cobre completamente o conteúdo), 
+contain (a imagem é redimensionada para caber), ou um valor específico (largura e altura). Veja um exemplo no quadro abaixo:
+
+background-size: cover;
+
+---------
+
+background-attachment: Determina se a imagem de fundo é fixa com relação à viewport ou se rola junto com o elemento contendo. Veja um exemplo no quadro abaixo:
+
+background-attachment: fixed;
+
+---------
+
+-> O CSS também suporta gradientes lineares e radiais como valores de background-image:
+
+
+Gradiente Linear: A cor transita ao longo de uma linha entre dois ou mais pontos. Veja um exemplo no quadro abaixo:
+
+background-image: linear-gradient(to right, red, orange, yellow);
+
+---------
+
+Gradiente Radial: A cor transita radialmente de um ponto central. Veja um exemplo no quadro abaixo:
+
+background-image: radial-gradient(circle, red, yellow, green);
+
+*/
