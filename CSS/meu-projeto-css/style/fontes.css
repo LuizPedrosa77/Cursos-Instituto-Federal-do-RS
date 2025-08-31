@@ -88,6 +88,8 @@ Valores Numéricos:
 800, 900: Pesos de fonte muito grossos, mais do que bold.
 Valores Relativos:
 bolder e lighter: Estes valores ajustam o peso da fonte para ser mais pesado ou mais leve, respectivamente, em relação ao peso herdado do elemento pai.
+
+
 */
 
 /* ESTILO DE FONTES */
@@ -105,4 +107,25 @@ Em muitos casos, se uma fonte itálica não está disponível, um navegador pode
 
 oblique <angle>: Você pode especificar um ângulo para o texto oblíquo. Por exemplo, oblique 15deg inclina o texto em um ângulo de 15 graus. 
 Esta capacidade oferece mais controle sobre o grau de inclinação do texto.
+
+*/
+
+/* ALINHAMENTO DE TEXTO */
+
+/*
+A propriedade text-align é usada para definir o alinhamento horizontal do texto dentro de um elemento.
+
+
+left: Alinha o texto à esquerda do contêiner. Este é o valor padrão para a maioria dos idiomas que são escritos da esquerda para a direita.
+
+right: Alinha o texto à direita do contêiner. Comumente usado em idiomas que são escritos da direita para a esquerda, mas também pode 
+ser usado para estilização em idiomas da esquerda para a direita.
+
+center: Centraliza o texto dentro do contêiner. Frequentemente usado para cabeçalhos, títulos ou qualquer elemento textual que você deseja 
+destacar no meio da página.
+
+justify: Estica as linhas de texto de modo que ambas as extremidades do texto se encaixem exatamente nas bordas esquerda e direita do contêiner. 
+Isso cria um bloco visual uniforme de texto, semelhante ao que é visto em colunas de jornais.
+
+start e end: Alinha o texto ao início ou ao fim da linha base, respectivamente. 
 */
