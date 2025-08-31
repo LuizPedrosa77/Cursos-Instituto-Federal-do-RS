@@ -1,0 +1,47 @@
+/* PREENCHIMENTO */
+
+/*
+O preenchimento, ou padding, é usado para criar espaço dentro do elemento, o que pode melhorar a legibilidade e a estética de um layout de página web.
+
+O padding pode ser especificado para cada lado do elemento (superior, direito, inferior, esquerdo) usando propriedades específicas:
+
+
+padding-top: controla o espaço de preenchimento na parte superior de um elemento.
+padding-right: controla o espaço de preenchimento na parte direita de um elemento.
+padding-bottom: controla o espaço de preenchimento na parte inferior de um elemento.
+padding-left: controla o espaço de preenchimento na parte esquerda de um elemento.
+*/
+
+/*
+Um valor: Aplica o mesmo padding a todos os quatro lados. Veja um exemplo no quadro abaixo:
+*/
+.element {
+    padding: 10px;
+}
+
+/*
+Dois valores: O primeiro valor aplica-se ao padding superior e inferior, e o segundo ao padding direito e esquerdo. Veja um exemplo no quadro abaixo:
+*/
+.element {
+    padding: 5px 10px;
+}
+
+/*
+Três valores: O primeiro valor aplica-se ao topo, o segundo aos lados direito e esquerdo, e o terceiro ao fundo. Veja um exemplo no quadro abaixo:
+*/
+.element {
+    padding: 5px 10px 15px;
+}
+
+/*
+Quatro valores: Aplica-se padding específico a cada lado, na ordem: superior, direito, inferior, esquerdo. Veja um exemplo no quadro abaixo:
+*/
+.element {
+    padding: 5px 10px 15px 20px;
+}
+
+/*
+Pixels (px): Uma unidade de medida fixa que não se altera com mudanças no tamanho da fonte ou dimensão da janela.
+Percentual (%): Calculado em relação à largura do elemento contêiner. Usar percentuais pode ajudar a criar layouts mais responsivos.
+Ems (em) e Rems (rem): Ems são baseadas no tamanho da fonte do elemento atual, enquanto rems são baseadas no tamanho da fonte do elemento raiz (<html>).
+*/

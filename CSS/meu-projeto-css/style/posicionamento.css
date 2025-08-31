@@ -1,0 +1,152 @@
+/* PROPRIEDADE DISPLAY */
+/*
+A propriedade display é uma das propriedades mais fundamentais para controlar o layout de elementos na web. 
+Ela determina o tipo de caixa de renderização usada para um elemento, influenciando diretamente como esse elemento é tratado em termos 
+de fluxo de documento, layout e comportamento de visualização.
+*/
+
+/*
+Palavra-chave block
+
+A palavra-chave “block” especifica um tipo de exibição externa do elemento, que é essencialmente como ele se comporta dentro do fluxo de layout geral da página.
+*/
+
+/*
+Palavra-chave inline
+
+A palavra-chave “inline” também especifica um tipo de exibição externa do elemento, que é essencialmente como ele se comporta 
+dentro do fluxo de layout geral da página. 
+*/
+
+exemplo {
+    display: inline;
+    /* definição do tipo de posicionamento */
+}
+
+/*
+Palavra-chave inline-block
+A propriedade display: inline-block; combina características dos tipos de exibição inline e block. 
+Ela é usada para fazer elementos se comportarem como inline, alinhando-se na mesma linha que elementos adjacentes e conteúdo de texto, 
+mas mantendo as características de dimensionamento de block, como a capacidade de definir largura (width) e altura (height).
+*/
+exemplo {
+    width: 300px;
+    display: inline-block;
+    /* definição do tipo de posicionamento */
+}
+
+/*
+Palavra-chave none
+A propriedade display: none; é usada para remover completamente um elemento do fluxo do documento. 
+Quando aplicada, a propriedade faz com que o elemento e todos os seus filhos não sejam renderizados, como se não existissem na página. 
+*/
+
+exemplo {
+    display: none;
+    /* definição do tipo de posicionamento */
+}
+
+/*
+Palavra-chave flex
+A propriedade display: flex; faz parte do Flexbox Layout (Flexible Box), um modelo de layout unidimensional projetado para 
+distribuir espaço e alinhar itens de forma eficiente em contêineres, mesmo quando o tamanho dos itens é desconhecido ou dinâmico.  
+Definir um elemento com display: flex; torna-o um contêiner flexível, fazendo com que seu comportamento de layout 
+siga as regras do Flexbox. Os filhos diretos deste contêiner se tornam itens flexíveis.
+
+
+
+row: Este é o valor padrão. Os itens são dispostos na mesma direção do texto, da esquerda para a direita 
+em línguas escritas da esquerda para a direita (como o português), e da direita para a esquerda em línguas de direção oposta. 
+Os itens são alinhados ao longo do eixo horizontal.
+
+row-reverse: Semelhante ao row, mas inverte a direção dos itens. Ou seja, se o row alinha os itens da esquerda para a direita, 
+row-reverse os alinhará da direita para a esquerda, independentemente da direção do texto da língua.
+
+column: Os itens são dispostos verticalmente, de cima para baixo. Isso é útil para layouts empilhados onde os itens 
+precisam ser organizados um sobre o outro ao longo do eixo vertical.
+
+column-reverse: Como o column, mas inverte a ordem dos itens, alinhando-os de baixo para cima. 
+Esta configuração pode ser útil para layouts especiais onde a ordem visual invertida é necessária.
+*/
+
+
+/*
+Palavra-chave grid
+
+A propriedade display: grid; é uma parte fundamental do Grid Layout, que é um sistema poderoso e versátil para criar layouts 
+de página baseados em grades bidimensionais. Quando você define display: grid; em um elemento, esse elemento se torna um grid 
+container e seus filhos diretos se tornam grid items. O contêiner grid define o espaço dentro do qual você pode 
+criar um layout baseado em linhas e colunas.
+*/
+
+
+/*
+Propriedade position
+
+A propriedade position define a posição de um elemento em um documento (static, relative, absolute, fixed ou sticky). 
+Esta propriedade funciona em conjunto com as subpropriedades left, right, top, bottom e z-index para determinar a 
+posição final de um elemento em uma página, a saber:
+
+
+left: Define a distância entre o lado esquerdo do elemento e o lado esquerdo de seu contêiner de posicionamento.
+right: Define a distância entre o lado direito do elemento e o lado direito de seu contêiner de posicionamento.
+top: Define a distância entre o topo do elemento e o topo de seu contêiner de posicionamento.
+bottom: Define a distância entre a parte inferior do elemento e a parte inferior de seu contêiner de posicionamento.
+z-index: Controla a pilha de empilhamento dos elementos. Elementos com um valor maior de z-index aparecerão na frente de elementos com um valor menor de z-index.
+*/
+
+
+/*
+Palavra-chave static
+O posicionamento padrão de todo elemento no HTML é estático, ou seja, possui o valor position: static;
+mesmo que este valor não tenha sido declarado. Todo elemento estático é posicionado alinhado pelo canto 
+superior esquerdo no corpo do documento, não sendo possível alterar sua posição. Este elemento não aceita 
+as propriedades auxiliares top, bottom, left, right  e z-index . Assim, elementos posicionados como static 
+são colocados no fluxo normal do documento, seguindo a ordem em que aparecem no código HTML.
+*/
+
+
+/*
+Palavra-chave relative
+Elementos configurados com position: relative; mantêm-se no fluxo normal do documento, 
+assim como aqueles com position: static. No entanto, a principal diferença é que, 
+com position: relative, as propriedades left, right, top, bottom, e z-index influenciam efetivamente sua posição. 
+Isso permite que o elemento seja deslocado em relação à sua posição original, 
+conforme definido pelos valores dessas propriedades, sem alterar o layout dos elementos ao redor.
+*/
+
+/*
+Palavra-chave absolute
+Elementos configurados com position: absolute; são posicionados em relação ao seu contêiner de posicionamento (contêiner pai) 
+mais próximo que tenha uma propriedade de posição não estática (relative, absolute, fixed ou sticky). 
+Assim, a posição de um elemento posicionado como absoluto é relativa ao primeiro ancestral na árvore de elementos 
+que tem uma posição não estática. Se tal ancestral não existir, o elemento será posicionado em relação ao corpo do documento (<body>). 
+Este tipo de posicionamento é usado frequentemente para criar elementos de interface que precisam "flutuar" sobre outros conteúdos, 
+como caixas de diálogo, menus dropdown e tooltips.
+*/
+
+/*
+Palavra-chave fixed
+Elementos configurados com position: fixed compartilham algumas semelhanças com aqueles que têm position: absolute, 
+uma vez que eles também são removidos do fluxo normal do documento (o que significa que eles não ocupam espaço no layout 
+e não afetam a posição de outros elementos). Contudo, ao contrário dos elementos com posicionamento absoluto, 
+os fixos somente são posicionados em relação ao elemento <html> (e não em relação a um contêiner de posicionamento mais próximo).
+*/
+
+/*
+Palavra-chave sticky
+A propriedade position: sticky é uma funcionalidade híbrida entre o posicionamento relative e fixed. 
+Quando você configura um elemento com position: sticky, ele se comporta como um elemento com 
+position: relative (está no fluxo normal do documento) até que seu bloco de contêiner atinja um limite definido na propriedade 
+(como top, bottom, left ou right). A partir deste ponto, ele se "fixa" nesta posição e começa a agir como se tivesse position: fixed. 
+Isso permite que o elemento "grude" em uma posição específica dentro da viewport (área visível do conteúdo em um dispositivo de exibição) 
+quando o usuário rola a página.
+*/
+
+/**/
+
+/**/
+
+/**/
+
+/**/

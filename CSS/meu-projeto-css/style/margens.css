@@ -1,0 +1,52 @@
+/* MARGENS */
+
+/*
+As margens em CSS são espaços ao redor dos elementos que servem para separar um elemento de seus vizinhos ou das bordas do contêiner pai. 
+Usar as margens corretamente é fundamental para criar layouts claros e bem estruturados. 
+
+A propriedade margin controla o espaço ao redor de um elemento. Existem quatro subpropriedades de margem que podem ser ajustadas 
+individualmente ou todas de uma só vez (através de um shorthand - abreviação):
+
+margin-top: Define a margem acima do elemento.
+margin-right: Define a margem à direita do elemento.
+margin-bottom: Define a margem abaixo do elemento.
+margin-left: Define a margem à esquerda do elemento.
+*/
+.element {
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.element {
+    margin: 5px 10px 15px 20px;
+    /* top, right, bottom, left */
+}
+
+.element {
+    margin: 20px;
+    /* aplica 20px a todas as margens */
+}
+
+.element {
+    margin: 10px 20px;
+    /* aplica 10px a top/bottom e 20px a left/right */
+}
+
+.element {
+    margin: 10px auto 20px;
+    /* top | left/right| bottom */
+}
+
+/*
+Pixels (px): são fixos e não se ajustam com base em outro elemento.
+Percentagens (%): são relativas ao elemento contêiner mais próximo.
+Ems (em) e rems (rem): são baseadas no tamanho da fonte.
+*/
+
+.element {
+    width: 50%;
+    margin: 0 auto;
+    /* auto aplica margens automáticas à esquerda e à direita */
+}

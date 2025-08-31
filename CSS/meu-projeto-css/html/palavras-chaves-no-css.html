@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com a palavra chave static no CSS</title>
+
+    <style>
+        .main-element1 {
+            position: static;
+            left: 10px;
+            /*Não vai fazer efeito */
+            bottom: 10px;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .sibling-element1 {
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+
+        .main-element2 {
+            position: relative;
+            left: 10px;
+            bottom: 10px;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .main-element3 {
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .parent-element3 {
+            position: relative;
+            height: 100px;
+            padding: 10px;
+            background-color: #81adc8;
+        }
+
+        .sibling-element3 {
+            background: #f2f2f2;
+            padding: 10px;
+            border: 1px solid #81adc8;
+        }
+
+        .main-element4 {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .main-element5 {
+            position: sticky;
+            top: 10px;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        /*html {
+            height: 800px;
+        }*/
+
+        .parent-element5 {
+            position: relative;
+            height: 800px;
+            padding: 50px 10px;
+            background-color: #81adc8;
+        }
+
+        .sibling-element5 {
+            background: #f2f2f2;
+            padding: 10px;
+            border: 1px solid #81adc8;
+        }
+
+        /*html {
+            height: 800px;
+        } */
+    </style>
+
+</head>
+
+<body>
+
+    <div class="parent-element1">
+        <div class="sibling-element1">Eu sou o outro elemento irmão.</div>
+        <div class="main-element1">Eu sou o elemento principal.</div>
+        <div class="sibling-element1">Eu sou o outro elemento irmão.</div>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <div class="parent-element2">
+        <div class="sibling-element2">Eu sou o outro elemento irmão.</div>
+        <div class="main-element2">Eu sou o elemento principal.</div>
+        <div class="sibling-element2">Eu sou o outro elemento irmão.</div>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <div class="parent-element3">
+        <div class="sibling-element3">Eu sou o outro elemento irmão.</div>
+        <div class="main-element3">Eu sou o elemento principal.</div>
+        <div class="sibling-element3">Eu sou o outro elemento irmão.</div>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <div class="parent-element4">
+        <div class="sibling-element4">Eu sou o outro elemento irmão.</div>
+        <div class="main-element4">Eu sou o elemento principal.</div>
+        <div class="sibling-element4">Eu sou o outro elemento irmão.</div>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <div class="parent-element5">
+        <div class="sibling-element5">Eu sou o outro elemento irmão.</div>
+        <div class="main-element5">Eu sou o elemento principal.</div>
+        <div class="sibling-element5">Eu sou o outro elemento irmão.</div>
+    </div>
+</body>
+
+</html>

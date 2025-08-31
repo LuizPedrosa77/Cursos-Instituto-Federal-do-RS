@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento de Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            /* Duas colunas, uma menor para nav e aside, e uma maior para o conteúdo principal */
+            grid-template-rows: auto 1fr auto;
+            /* Três linhas: cabeçalho, conteúdo principal, rodapé */
+            grid-template-areas:
+                "header header"
+                "nav main"
+                "aside main"
+                "footer footer";
+            gap: 10px;
+            height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background: lightblue;
+        }
+
+        nav {
+            grid-area: nav;
+            background: lightgreen;
+        }
+
+        main {
+            grid-area: main;
+            background: lightcoral;
+        }
+
+        aside {
+            grid-area: aside;
+            background: lightyellow;
+        }
+
+        footer {
+            grid-area: footer;
+            background: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>Header</header>
+        <nav>Navigation</nav>
+        <main>Main Content</main>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>
