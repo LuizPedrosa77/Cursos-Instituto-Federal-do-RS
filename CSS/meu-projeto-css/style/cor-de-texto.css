@@ -1,0 +1,35 @@
+/* Primeiro tipo de cores para texto */
+
+/* Nome de cores */
+exemplo1 {
+    color: blue;
+    color: lightseagreen;
+}
+
+/* Hexadecimal */
+exemplo2 {
+    color: #ff0000;
+    /* vermelho */
+    color: #00ff00;
+    /* verde */
+    color: #0000ff;
+    /* azul */
+    color: #f00;
+    /* vermelho abreviado */
+}
+
+/* RGB ou RGBA */
+exemplo3 {
+    color: rgb(255, 0, 0);
+    /* vermelho */
+    color: rgba(255, 0, 0, 0.5);
+    /* vermelho com 50% de opacidade */
+}
+
+/* HSL e HSLA */
+exemplo4 {
+    color: hsl(120, 100%, 50%);
+    /* verde puro */
+    color: hsla(120, 100%, 50%, 0.3);
+    /* verde puro com 30% de opacidade */
+}
